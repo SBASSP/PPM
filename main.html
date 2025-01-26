@@ -1,0 +1,445 @@
+<!-- VERSÃO 1.2.0 - AO UPAR NOVO CÓDIGO, ATUALIZAR A DOCUMENTAÇÃO NO DRIVE DO SBASSP-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASSP</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+        body{
+            font-family: 'Nunito', 'Calibri';
+            margin-left: 35px;
+            margin-right: 35px;
+            font-size: 11pt;
+            padding-bottom: 35px
+        }
+        #titulo{
+            text-align: center;
+            margin: 1px;
+        }
+        #titulo-prin{
+            font-size: 31px;
+            margin: 0;
+        }
+        #sub{
+            font-size: 18px;
+            margin: 0;
+            color: #3c78d8;
+        }
+        #titulo-sub{
+            font-size: 12px;
+            margin: 5px;
+        }
+        #blocos{
+            text-align: center;
+            margin: 10px;
+        }
+        .escolhas{
+            display:inline-block;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            width: 150px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 1%;
+            text-align: center;
+            padding: 2px;
+        }
+        .escolhas:hover{
+            display:inline-block;
+            border: 1px solid #000000;
+            border-radius: 2px;
+            background-color: #d5f2dd;
+            width: 150px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 1%;
+            text-align: center;
+            padding: 2px;
+            cursor: pointer;
+            scale: 1.05;
+        }
+        .tabelas{
+            visibility: collapse;
+        }
+        td{
+            padding: 5px;
+            border-right: 1px solid #000000;
+            font-size: 13px;
+        }
+        .cabeçalho{
+            background-color: #dfdede;
+        }
+        #corpo{
+            text-align: center;
+        }
+        a{
+            cursor: help;
+            color: #3c78d8;
+        }
+        a:selection{
+            cursor: help;
+            color: #d5f2dd;
+        }
+        /* Se você estiver procurando a cor do bloco selecionado, vá
+        à variável "cor_selecionado", na linha 307 */
+    </style>
+</head>
+<body>
+    <header>
+        <div id="titulo">
+        <p id="titulo-prin">Banco de Artigos Acadêmicos Suzana Dos Santos Pires</p>
+        <p id="sub">Pesquisa de trabalhos por matéria</p>
+        <p id="titulo-sub">Banco de trabalhos do Colégio Dom Pedro II</p>
+        </div>
+    </header>
+
+    <div id="blocos">
+        <div id="numero1">
+            <div id="pi" onclick="c_pi()" class="escolhas">Processos Industriais</div>
+            <div id="qo" onclick="c_qo()" class="escolhas">Química Orgânica</div>
+            <div id="qg" onclick="c_qg()" class="escolhas">Química Geral</div>
+        </div>
+        <div id="numero2">
+            <div id="cor" onclick="c_cor()" class="escolhas">Corrosão</div>
+            <div id="fi" onclick="c_fi()" class="escolhas">Fisquí</div>
+            <div id="ga" onclick="c_ga()" class="escolhas">Gestão Ambiental</div>
+        </div>
+        <div>
+            <p id="texto">Selecione uma matéria e veja os trabalhos disponíveis</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="corpo">
+        <div id="tabela-pi" class="tabelas">
+            <table>
+                <tr>
+                    <td class="cabeçalho">Cod.</td>
+                    <td class="cabeçalho">Trabalho</td>
+                    <td class="cabeçalho">Autor</td>
+                </tr>
+                <tr><!--001-0 - Indústria do Ácido Sulfúrico - Abner Luis Et Al-->
+                    <td>001-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/ind%C3%BAstria-do-%C3%A1cido-sulf%C3%BArico-abner-et-al">Indústria do Ácido Sulfúrico</a></td>
+                    <td>DOMINGOS, Abner; Et al</td>
+                </tr>
+                <tr><!--002-0 - Gases Industriais - Abner Luis Et Al-->
+                    <td>002-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/gases-industriais-produ%C3%A7%C3%A3o-e-tratamento">Gases Industriais: Produção e Tratamento</a></td>
+                    <td>DOMINGOS, Abner; Et al</td>
+                </tr>
+                <tr><!--003-0 - Processo Industrial da Galvanoplastia - Abner Luis Et Al-->
+                    <td>003-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/processo-industrial-da-galvanoplastia">Processo Industrial da Galvanoplastia</a></td>
+                    <td>DOMINGOS, Abner; Et al</td>
+                </tr>
+                <tr><!--004-0 - Indústria do Cimento - Ana Julia Et Al-->
+                    <td>004-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/ind%C3%BAstria-do-cimento-ana-julia">Indústria do Cimento</a></td>
+                    <td>MOURA, Ana Julia; Et al</td>
+                </tr>
+                <tr><!--005-0 - Ácido Sulfúrico e derivados-->
+                    <td>005-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/ácido-sulfúrico-e-derivados">Ácido Sulfúrico e derivados</a></td>
+                    <td>ALMEIDA, Emeli Lima dos Santos de; Et al</td>
+                </tr>
+                <tr><!--006-0 - Indústria de Perfumes-->
+                    <td>006-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/processo-industrial-de-perfumes">Processo Industrial de Perfumes</a></td>
+                    <td>DOMINGOS, Abner Luis Rodrigues; Et al</td>
+                </tr>
+                <tr><!--007-0 - Sabões e detergentes-->
+                    <td>007-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/sab%C3%B5es-e-detergentes">Sabões e detergentes</a></td>
+                    <td>DOMINGOS, Abner Luis Rodrigues; Et al</td>
+                </tr>
+                <tr><!--008-0 - Explosivos, Agentes químicos tóxicos e Propelentes-->
+                    <td>008-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/explosivos-agentes-quimicos-toxicos-e-propelentes">Explosivos, Agentes químicos tóxicos e Propelentes</a></td>
+                    <td>BENVENUTI, Agatha Medeiros Nunes; Et al</td>
+                </tr>
+                <tr><!--009-0 - Indústria do Plástico-->
+                    <td>009-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-do-plastico-009-0">Indústria do Plástico</a></td>
+                    <td>EVANGELISTA, Gabriel da Silva; Et al</td>
+                </tr>
+                <tr><!--010-0 - Indústria do Fósforo-->
+                    <td>010-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-do-fosforo-010-0">Indústria do Fósforo</a></td>
+                    <td>CARREIRO, Adilson De Oliveira Raposo; Et al</td>
+                </tr>
+                <tr><!--011-0 - Processo Industrial Farmacêutico-->
+                    <td>011-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/processo-industrial-farmaceutico-011-0">Processo Industrial Farmacêutico</a></td>
+                    <td>SANTOS, Camily Cristina Queiroz; Et al</td>
+                </tr>
+                <tr><!--012-0 - Indústria do Nitrogênio-->
+                    <td>012-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-do-nitrogenio-012-0">Indústria do Nitrogênio</a></td>
+                    <td>MENDONÇA, Esther Azevedo; Et al</td>
+                </tr>
+                <tr><!--013-0 - Tintas e Correlatos-->
+                    <td>013-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/tintas-e-correlatos-013-0">Tintas e Correlatos</a></td>
+                    <td>BENVENUTI, Agatha Medeiros Nunes; Et al</td>
+                </tr>
+                <tr><!--014-0 - Cloreto de Sódio e outros compostos  de Sódio-->
+                    <td>014-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/pi2/cloreto-de-sodio-e-outros-compostos-de-sodio-014-0">Cloreto de Sódio e outros compostos de Sódio</a></td>
+                    <td>OLIVEIRA, Bernardo Marinho Gonçalves; Et al</td>
+                </tr>
+                <tr><!--015-0 - Indústria do Fósforo-->
+                    <td>015-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-do-fosforo-015-0">Indústria do Fósforo Ana Beatriz</a></td>
+                    <td>PAIXÃO, Ana Beatriz Barbosa De Oliveira; Et al</td>
+                </tr>
+                <tr><!--016-0 - Indústria Petrolífera-->
+                    <td>016-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-petrolífera-016-0">Indústria Petrolífera</a></td>
+                    <td>DOMINGOS, Abner Luis Rodrigues; Et al</td>
+                </tr>
+                <tr><!--017-0 - Indústria de Polímeros-->
+                    <td>017-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-de-polimeros-017-0">Indústria de Polímeros </a></td>
+                    <td>MARTINS, João Vitor de Souza; Et al</td>
+                </tr>
+                <tr><!--018-0 - Indústria da Fermentação-->
+                    <td>018-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-da-fermentacao-018-0">Indústria da Fermentação </a></td>
+                    <td>RIBEIRO,  Agatha Luisa Oliveira de Paula; Et al</td>
+                </tr>
+                <tr><!--019-0 - Indústria Petroquímica-019-0-->
+                    <td>019-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-petroquimica-019-0">Indústria Petroquímica-019-0 </a></td>
+                    <td>EIRIZ, Marcella Aguiar ; Et al</td>
+                </tr>
+                <tr><!--020-0 - Indústria de Alimentos e Co-Produtos-->
+                    <td>020-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-de-alimentos-e-co-produtos-020-0">Indústria de Alimentos e Co-Produtos </a></td>
+                    <td>SOARES, João Kioshe Zukeram ; Et al</td>
+                </tr>
+                <tr><!--021-0 - Indústria do Plástico-->
+                    <td>021-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-do-plastico-021-0">Indústria do Plástico </a></td>
+                    <td>PAIXÃO, Ana Beatriz Barbosa De Oliveira ; Et al</td>
+                </tr>
+                 <tr><!--022-0 - Indústria Petroquímica-022-0-->
+                    <td>022-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/industria-petroquimica-022-0">Indústria Petroquímica-022-0 </a></td>
+                    <td>CARREIRO, Adilson De Oliveira Raposo ; Et al</td>
+                </tr>
+                 <tr><!--023-0 - Gases Combustíveis e Energias Renováveis-->
+                    <td>023-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/processos-industriais/gases-combustiveis-e-energias-renovaveis-023-0">Gases Combustíveis e Energias Renováveis </a></td>
+                    <td>BENVENUTI, Agatha Medeiros Nunes ; Et al</td>
+                </tr>
+                <tr><!--025-0 - Processo Industrial de Óleos e Gorduras-->
+                    <td>025-0</td>
+                    <td><a href="https://sites.google.com/view/sbassp/pi2/processo-industrial-de-oleos-e-gorduras-025-0">Processo Industrial de Óleos e Gorduras </a></td>
+                    <td>SANTOS, Camilly Cristina Queiroz ; Et al</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="tabela-qo" class="tabelas">
+            <table>
+                <tr class="cabeçalho">
+                    <td>Cod.</td>
+                    <td>Trabalho</td>
+                    <td>Autor</td>
+                </tr>
+                <tr>
+                    <td>002-2</td>
+                    <td><a href="https://sites.google.com/view/sbassp/qu%C3%ADmica-org%C3%A2nica/introdu%C3%A7%C3%A3o-%C3%A0-qu%C3%ADmica-org%C3%A2nica">Introdução à Química Orgânica</a></td>
+                    <td>RAMILO, Daniel Sedano</td>
+                </tr>
+                <tr><!--001-2 - Apostila de Isomeria - RAMILO, Daniel Sedano-->
+                    <td>001-2</td>
+                    <td><a href="https://sites.google.com/view/sbassp/qu%C3%ADmica-org%C3%A2nica/apostila-de-isomeria">Isomeria Plana, Óptica e Geométrica</a></td>
+                    <td>RAMILO, Daniel Sedano</td>
+                </tr>
+                <tr>
+                    <td>003-2</td>
+                    <td><a href="https://sites.google.com/view/sbassp/qu%C3%ADmica-org%C3%A2nica/rea%C3%A7%C3%B5es-org%C3%A2nicas">Reações Orgânicas</a></td>
+                    <td>RAMILO, Daniel Sedano</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="tabela-qg" class="tabelas">
+            <table>
+                <tr class="cabeçalho">
+                    <td>Cod.</td>
+                    <td>Trabalho</td>
+                    <td>Autor</td>
+                </tr>
+                <tr><!--001-1 - Grandezas e semelhanças atômicas - Abner Luis Et Al-->
+                    <td>001-1</td>
+                    <td><a href="https://sites.google.com/view/sbassp/qu%C3%ADmica-geral/grandezas-e-semelhan%C3%A7as-at%C3%B4micas">Grandezas e Semelhanças atômicas</a></td>
+                    <td>MOURA, Ana Julia Corrêa</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="tabela-cor" class="tabelas">
+            <table>
+                <tr class="cabeçalho">
+                    <td>Cod.</td>
+                    <td>Trabalho</td>
+                    <td>Autor</td>
+                </tr>
+                <tr>
+                    <td>001-5</td>
+                    <td><a href="https://sites.google.com/view/sbassp/corros%C3%A3o/apostila-redox">Apostila Redox</a></td>
+                    <td>DOMINGOS, Abner Luis</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="tabela-fi" class="tabelas">
+            <table>
+                <tr class="cabeçalho">
+                    <td>Cod.</td>
+                    <td>Trabalho</td>
+                    <td>Autor</td>
+                </tr>
+                <tr>
+                    <td>001-4</td>
+                    <td><a href="https://sites.google.com/view/sbassp/fisqui/apostila-entalpia">Apostila Entalpia</a></td>
+                    <td>SOUSA, Larissa</td>
+                </tr>
+                <tr>
+                    <td>002-4</td>
+                    <td><a href="https://sites.google.com/view/sbassp/fisqui/resumo-de-concentra%C3%A7%C3%B5es">Resumo de Concentrações</a></td>
+                    <td>RAMILO, Daniel Sedano</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div id="tabela-ga" class="tabelas">
+            <table>
+                <tr class="cabeçalho">
+                    <td>Cod.</td>
+                    <td>Trabalho</td>
+                    <td>Autor</td>
+                </tr>
+                <tr>
+                    <td>001-3</td>
+                    <td><a href="https://sites.google.com/view/sbassp/ambiental/conceitos-ecol%C3%B3gicos">Conceitos Ecológicos</a></td>
+                    <td>ALELUIA, Maria Eduarda</td>
+                </tr>
+                <tr>
+                    <td>002-3</td>
+                    <td><a href="https://sites.google.com/view/sbassp/ambiental/a-caatinga-emanuele-et-al">A Caatinga</td>
+                    <td>ALBUQUERQUE, Emanuele Cosendey</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        var cor_selecionado = "#51ce74"
+        function c_pi(){
+            window.document.getElementById("pi").style.backgroundColor = cor_selecionado;
+            window.document.getElementById("qo").style.backgroundColor = null;
+            window.document.getElementById("qg").style.backgroundColor = null;
+            window.document.getElementById("cor").style.backgroundColor = null;
+            window.document.getElementById("fi").style.backgroundColor = null;
+            window.document.getElementById("ga").style.backgroundColor = null;
+            window.document.querySelector("div#tabela-qo").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-qg").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-cor").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-fi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-ga").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-pi").style.visibility = "visible";
+        }
+        function c_qo(){
+            document.getElementById("pi").style.backgroundColor = null;
+            document.getElementById("qo").style.backgroundColor = cor_selecionado;
+            document.getElementById("qg").style.backgroundColor = null;
+            document.getElementById("cor").style.backgroundColor = null;
+            document.getElementById("fi").style.backgroundColor = null;
+            document.getElementById("ga").style.backgroundColor = null;
+            document.querySelector("div#tabela-pi").style.visibility = "collapse";
+            document.querySelector("div#tabela-qg").style.visibility = "collapse";
+            document.querySelector("div#tabela-cor").style.visibility = "collapse";
+            document.querySelector("div#tabela-ga").style.visibility = "collapse";
+            document.querySelector("div#tabela-fi").style.visibility = "collapse";
+            document.querySelector("div#tabela-qo").style.visibility = "visible";
+        }
+        function c_qg(){
+            window.document.getElementById("pi").style.backgroundColor = null;
+            window.document.getElementById("qo").style.backgroundColor = null;
+            window.document.getElementById("qg").style.backgroundColor = cor_selecionado;
+            window.document.getElementById("cor").style.backgroundColor = null;
+            window.document.getElementById("fi").style.backgroundColor = null;
+            window.document.getElementById("ga").style.backgroundColor = null;
+            window.document.querySelector("div#tabela-qo").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-pi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-cor").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-fi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-ga").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-qg").style.visibility = "visible";
+        }
+        function c_cor(){
+            document.getElementById("pi").style.backgroundColor = null;
+            document.getElementById("qo").style.backgroundColor = null;
+            document.getElementById("qg").style.backgroundColor = null;
+            document.getElementById("cor").style.backgroundColor = cor_selecionado;
+            document.getElementById("fi").style.backgroundColor = null;
+            document.getElementById("ga").style.backgroundColor = null;
+            document.querySelector("div#tabela-qo").style.visibility = "collapse";
+            document.querySelector("div#tabela-pi").style.visibility = "collapse";
+            document.querySelector("div#tabela-qg").style.visibility = "collapse";
+            document.querySelector("div#tabela-ga").style.visibility = "collapse";
+            document.querySelector("div#tabela-fi").style.visibility = "collapse";
+            document.querySelector("div#tabela-cor").style.visibility = "visible";
+        }
+        function c_fi(){
+            window.document.getElementById("pi").style.backgroundColor = null;
+            window.document.getElementById("qo").style.backgroundColor = null;
+            window.document.getElementById("qg").style.backgroundColor = null;
+            window.document.getElementById("cor").style.backgroundColor = null;
+            window.document.getElementById("fi").style.backgroundColor = cor_selecionado;
+            window.document.getElementById("ga").style.backgroundColor = null;
+            window.document.querySelector("div#tabela-qo").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-pi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-cor").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-qg").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-ga").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-fi").style.visibility = "visible";
+        }
+        function c_ga(){
+            window.document.getElementById("pi").style.backgroundColor = null;
+            window.document.getElementById("qo").style.backgroundColor = null;
+            window.document.getElementById("qg").style.backgroundColor = null;
+            window.document.getElementById("cor").style.backgroundColor = null;
+            window.document.getElementById("fi").style.backgroundColor = null;
+            window.document.getElementById("ga").style.backgroundColor = cor_selecionado;
+            window.document.querySelector("div#tabela-qo").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-pi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-cor").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-fi").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-qg").style.visibility = "collapse";
+            window.document.querySelector("div#tabela-ga").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>
+
+<!-- VERSÃO 1.2.0 - AO UPAR NOVO CÓDIGO, ATUALIZAR A DOCUMENTAÇÃO NO DRIVE DO SBASSP-->
